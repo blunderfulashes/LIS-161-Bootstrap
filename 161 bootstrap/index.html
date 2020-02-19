@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body>
+    <!-- Bootstrap Javascript Files-->
+    <script type="text/javascript" src="js/jquery-3.4.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Media Moods</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+              <a class="nav-link" href="#">My Account<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Media Types
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Books</a>
+              <a class="dropdown-item" href="#">Comics</a>
+              <a class="dropdown-item" href="#">Movies</a>
+              <a class="dropdown-item" href="#">Games</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <!--Profile Details-->
+
+    <main class="container pt-5">
+      <div class="row">
+        <div class="col-4">
+          <div class="input-group mb-3">
+            <div class="border p-5">
+              <img src="placeholder.jpg" style="width: 300px;" alt="Display Picture">
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                <label class="custom-file-label" for="inputGroupFile01">Upload Photo</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="input-group flex-nowrap">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="addon-wrapping">@</span>
+            </div>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+          </div>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Full Name</span>
+            </div>
+            <input type="text" aria-label="First name" class="form-control" placeholder="Given Name">
+            <input type="text" aria-label="Last name" class="form-control" placeholder="Last Name">
+          </div>
+          <div class="row">
+          Birthday
+            <select name="Month" class="custom-select-sm">
+              <option selected>Select</option>
+                <option value="Jan">January</option>
+                <option value="Feb">February</option>
+                <option value="Mar">March</option>
+                <option value="Apr">April</option>
+                <option value="May">May</option>
+                <option value="Jun">June</option>
+                <option value="Jul">July</option>
+                <option value="Aug">August</option>
+                <option value="Sept">September</option>
+                <option value="Oct">October</option>
+                <option value="Nov">November</option>
+                <option value="Dec">December</option>
+            </select>
+            <select name="day" class="custom-select-sm">
+                 <option selected>Select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Contact Info</li>
+              <li class="list-group-item">Address<p><input class="text" placeholder="21 Jump Street, Footloose Vill, Manila"></p></li>
+              <li class="list-group-item">Email<p><input class="text" placeholder="juan@example.com"></p></li>
+              <li class="list-group-item">Mobile Number<p><input class="number" placeholder="09xxxxxxxxx"></p></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6">
+  				<textarea class="form-control" rows="5" id="comment" placeholder="Tell us about yourself"></textarea>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
